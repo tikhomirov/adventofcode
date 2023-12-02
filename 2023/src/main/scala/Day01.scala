@@ -1,7 +1,7 @@
 import scala.io.Source
 
-object Day1:
-  lazy val source = Source.fromFile("input/day1.txt")
+object Day01:
+  lazy val source = Source.fromFile("input/day01.txt")
   lazy val lines = source.getLines.toList
 
   lazy val wordToDigit = Map(

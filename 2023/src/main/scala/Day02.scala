@@ -1,6 +1,6 @@
 import scala.io.Source
 
-object Day2:
+object Day02:
   case class Round(r: Int, g: Int, b: Int):
     val isPossible: Boolean = (r <= 12) && (g <= 13) && (b <= 14)
 
@@ -26,7 +26,7 @@ object Day2:
   def extractNumber(str: String): Int =
     "\\d+".r.findFirstIn(str).get.toInt
 
-  lazy val source = Source.fromFile("input/day2.txt")
+  lazy val source = Source.fromFile("input/day02.txt")
   lazy val input = source.getLines.toSeq
   lazy val games = input.map(parseGame)
 
